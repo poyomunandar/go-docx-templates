@@ -7,7 +7,7 @@ import (
     "strings"
     "reflect"
     "github.com/aymerick/raymond"
-    "github.com/qida/go-docx-templates/graph"
+    "github.com/poyomunandar/go-docx-templates/graph"
 )
 
 var (
