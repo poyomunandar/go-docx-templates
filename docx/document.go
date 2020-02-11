@@ -128,6 +128,8 @@ func decodeItem(element *xml.StartElement, decoder *xml.Decoder) DocItem {
             item = new(RecordItem)
         } else if element.Name.Local == "tbl" {
             item = new(TableItem)
+        } else if element.Name.Local == "hyperlink" {
+            item = new(RecordItem)
         }
         if item != nil {
             if item.decode(decoder) == nil {
